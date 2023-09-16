@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="codingTest.test.one.OrderMapper">
+    <insert id="insert" parameterType="codingTest.test.one.CreateOrderDto">
+        INSERT INTO order( order_id
+                         , product_name
+                         , options
+                         , table_no
+                         , quantity
+                         , order_date
+                         , order_time
+                         , date_time
+                         , robot_status
+                         , dong
+                         , ho
+                         , seq
+                         , order_name
+                         , createDate
+                         , modifyDate)
+        values ( #{order_id}
+               , #{product_name}
+               , #{options}
+               , #{table_no}
+               , #{quantity}
+               , #{order_date}
+               , #{order_time}
+               , #{date_time}
+               , #{robot_status}
+               , #{dong}
+               , #{ho}
+               , #{seq}
+               , #{order_name}
+               , #{createDate}
+               , #{modifyDate})
+    </insert>
+</mapper>

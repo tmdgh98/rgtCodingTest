@@ -52,7 +52,7 @@ function makeMenu() {
             let price = menuItem.price.replace(",", "");
             let html = "";
             html += `<div class="info" id="${no}" data-product-name="${prductName}" data-price="${price}" onclick="makeTable('${no}');">`;
-            html += `<div class="img"><img src="https://image-proxy.sta1.com/_up/shop/logo/2019/06/1559710017170_mi.jpg"></div>`;
+            html += `<div class="img"><img src="/img/coffee.jpg" style="height: 150px; width: 150px;"></div>`;
             html += `<h2 class="shop-name">${prductName}</h2>`;
             html += `<p>${price}</p>`;
             html += `</div>`;
